@@ -1,0 +1,248 @@
+# Vibe Coder Survival Pack — canonical topic list
+
+Source list used for coverage of the `fullstack-vibe-coder` skill (11 Nov 2026).
+OCR notes in the AI section were interpreted as: Hallucinated APIs/packages, and Agent instructions files / READMEs (including AGENTS.md).
+
+Core app: Load Balancing, Rate Limiting, Environment Variables, Secrets Management, Authentication, Authorization, Input Validation, CORS, HTTP Status Codes, Error Handling, Automated Testing
+Database & platform basics: Database Indexing, Database Migrations, Pagination, Backups, Caching, CDNs, Logging, Monitoring, Timeouts, Retries, Exponential Backoff, Idempotency, Git, Circuit Breakers, Reverse Proxies, API Gateways, Docker, CI/CD, Message Queues, HTTPS/TLS, DNS, Password Hashing, Session Management, JWTs, OAuth, Two-Factor Authentication
+Security: SQL Injection, XSS, CSRF, Dependency Vulnerabilities, Principle of Least Privilege, File Upload Security, Content Security Policy, Security Headers, Clickjacking, SSRF, Open Redirects, Path Traversal, Command Injection, Mass Assignment, IDOR, Brute Force Protection, Account Lockout, Password Reset Flows, Email Verification, Magic Links, Passkeys, SSO, Role-Based Access Control, Row-Level Security, API Keys, Token Expiration and Refresh, Cookie Flags (HttpOnly/Secure/SameSite), Secret Rotation, Audit Logs, Encryption at Rest, Encryption in Transit, Hashing vs Encryption, Salting, Penetration Testing, OWASP Top 10, Bot Protection, CAPTCHA, DDoS Protection, WAF, Firewalls, VPCs, SSH Keys, Supply Chain Attacks
+Database internals: Transactions, Race Conditions, Connection Pooling, N+1 Queries, Normalization, Soft Deletes, Server-Side Data Validation, Read Replicas, Horizontal vs Vertical Scaling, Stateless Services, Joins, Query Plans (EXPLAIN), ORMs, Raw SQL, Schema Design, Denormalization, Seed Data, Database Locks, Deadlocks, Isolation Levels, ACID, Eventual Consistency, Full-Text Search, Cursor-Based Pagination, Point-in-Time Recovery, Testing Backup Restores, Data Retention Policies, Data Migration Scripts, Zero-Downtime Migrations
+Infra & ops: Webhooks, Background Jobs, Cron Jobs, Cache Invalidation, Health Checks, Graceful Shutdown, Alerting, Distributed Tracing, Structured Logging, Error Tracking, Uptime Monitoring, Feature Flags, Staging Environments, Rollbacks, Blue-Green Deployments, Infrastructure as Code, Code Review, Branching Strategies, Semantic Versioning, API Versioning, API Documentation, Unit vs Integration vs E2E Tests, Load Testing, Debugging, Profiling, Time Zones, Character Encoding, Concurrency, Async/Await, Memory Leaks, Cost Monitoring, Disaster Recovery, Data Privacy (GDPR), Accessibility, Mobile Responsiveness, Performance Budgets, Technical Debt, Reading Documentation, Reading Error Messages
+Storage & delivery: Key-Value Stores, Redis, Object Storage, Presigned URLs, Image Optimization, Video Streaming, Compression (Gzip/Brotli), HTTP Caching Headers, TTLs, Edge Computing, Serverless Functions, Cold Starts, Containers vs VMs, Kubernetes, Docker Compose, Autoscaling, Regions and Availability Zones, Vendor Lock-In
+Reliability & process: SLOs, SLAs, Incident Response, Postmortems, On-Call, Runbooks, Status Pages, Metrics, Dashboards, Log Retention, Log Levels, Correlation IDs, PII in Logs, Observability, Rolling Deployments, A/B Testing, Environment Parity, Configuration Management, Merge Conflicts, Rebasing, Pull Requests, Commit Messages, .gitignore, Git Tags and Releases, Changelogs, Linting, Formatting, Type Safety, Pre-Commit Hooks, Code Coverage, Mocking, Test Fixtures, Flaky Tests, Regression Testing, TDD, Smoke Tests, Security Scanning (SAST/DAST)
+API types: REST, GraphQL, WebSockets
+AI-specific (some were OCR-garbled; interpret sensibly): RAG, Streaming LLM Responses, Evaluating LLM Output (evals), Reviewing AI-Generated Code, Hallucinated APIs/packages ("Hallucinated Reading Traces" in OCR), Writing Good Bug Reports, Code Comments & Refactoring, Premature Abstraction, Agent instructions files / READMEs (AGENTS.md, "AGNI READMEs" in OCR), Architecture Decision Records
+Other: Domain Names, SSL Certificate Renewal, Command Line Basics, Package Managers, Lockfiles, Dependency Pinning, License Compliance, SQL vs NoSQL, Primary Keys, Foreign Keys, UUIDs vs Auto-Increment IDs, Unique Constraints, Database Constraints
+
+
+## Clean list (229 topics)
+
+- Load Balancing
+- Rate Limiting
+- Environment Variables
+- Secrets Management
+- Authentication
+- Authorization
+- Input Validation
+- CORS
+- HTTP Status Codes
+- Error Handling
+- Automated Testing
+- Database Indexing
+- Database Migrations
+- Pagination
+- Backups
+- Caching
+- CDNs
+- Logging
+- Monitoring
+- Timeouts
+- Retries
+- Exponential Backoff
+- Idempotency
+- Git
+- Circuit Breakers
+- Reverse Proxies
+- API Gateways
+- Docker
+- CI/CD
+- Message Queues
+- HTTPS/TLS
+- DNS
+- Password Hashing
+- Session Management
+- JWTs
+- OAuth
+- Two-Factor Authentication
+- SQL Injection
+- XSS
+- CSRF
+- Dependency Vulnerabilities
+- Principle of Least Privilege
+- File Upload Security
+- Content Security Policy
+- Security Headers
+- Clickjacking
+- SSRF
+- Open Redirects
+- Path Traversal
+- Command Injection
+- Mass Assignment
+- IDOR
+- Brute Force Protection
+- Account Lockout
+- Password Reset Flows
+- Email Verification
+- Magic Links
+- Passkeys
+- SSO
+- Role-Based Access Control
+- Row-Level Security
+- API Keys
+- Token Expiration and Refresh
+- Cookie Flags (HttpOnly/Secure/SameSite)
+- Secret Rotation
+- Audit Logs
+- Encryption at Rest
+- Encryption in Transit
+- Hashing vs Encryption
+- Salting
+- Penetration Testing
+- OWASP Top 10
+- Bot Protection
+- CAPTCHA
+- DDoS Protection
+- WAF
+- Firewalls
+- VPCs
+- SSH Keys
+- Supply Chain Attacks
+- Transactions
+- Race Conditions
+- Connection Pooling
+- N+1 Queries
+- Normalization
+- Soft Deletes
+- Server-Side Data Validation
+- Read Replicas
+- Horizontal vs Vertical Scaling
+- Stateless Services
+- Joins
+- Query Plans (EXPLAIN)
+- ORMs
+- Raw SQL
+- Schema Design
+- Denormalization
+- Seed Data
+- Database Locks
+- Deadlocks
+- Isolation Levels
+- ACID
+- Eventual Consistency
+- Full-Text Search
+- Cursor-Based Pagination
+- Point-in-Time Recovery
+- Testing Backup Restores
+- Data Retention Policies
+- Data Migration Scripts
+- Zero-Downtime Migrations
+- Webhooks
+- Background Jobs
+- Cron Jobs
+- Cache Invalidation
+- Health Checks
+- Graceful Shutdown
+- Alerting
+- Distributed Tracing
+- Structured Logging
+- Error Tracking
+- Uptime Monitoring
+- Feature Flags
+- Staging Environments
+- Rollbacks
+- Blue-Green Deployments
+- Infrastructure as Code
+- Code Review
+- Branching Strategies
+- Semantic Versioning
+- API Versioning
+- API Documentation
+- Unit vs Integration vs E2E Tests
+- Load Testing
+- Debugging
+- Profiling
+- Time Zones
+- Character Encoding
+- Concurrency
+- Async/Await
+- Memory Leaks
+- Cost Monitoring
+- Disaster Recovery
+- Data Privacy (GDPR)
+- Accessibility
+- Mobile Responsiveness
+- Performance Budgets
+- Technical Debt
+- Reading Documentation
+- Reading Error Messages
+- Key-Value Stores
+- Redis
+- Object Storage
+- Presigned URLs
+- Image Optimization
+- Video Streaming
+- Compression (Gzip/Brotli)
+- HTTP Caching Headers
+- TTLs
+- Edge Computing
+- Serverless Functions
+- Cold Starts
+- Containers vs VMs
+- Kubernetes
+- Docker Compose
+- Autoscaling
+- Regions and Availability Zones
+- Vendor Lock-In
+- SLOs
+- SLAs
+- Incident Response
+- Postmortems
+- On-Call
+- Runbooks
+- Status Pages
+- Metrics
+- Dashboards
+- Log Retention
+- Log Levels
+- Correlation IDs
+- PII in Logs
+- Observability
+- Rolling Deployments
+- A/B Testing
+- Environment Parity
+- Configuration Management
+- Merge Conflicts
+- Rebasing
+- Pull Requests
+- Commit Messages
+- .gitignore
+- Git Tags and Releases
+- Changelogs
+- Linting
+- Formatting
+- Type Safety
+- Pre-Commit Hooks
+- Code Coverage
+- Mocking
+- Test Fixtures
+- Flaky Tests
+- Regression Testing
+- TDD
+- Smoke Tests
+- Security Scanning (SAST/DAST)
+- REST
+- GraphQL
+- WebSockets
+- RAG
+- Streaming LLM Responses
+- Evaluating LLM Output (evals)
+- Reviewing AI-Generated Code
+- Hallucinated APIs/packages
+- Writing Good Bug Reports
+- Code Comments & Refactoring
+- Premature Abstraction
+- Agent instructions files / READMEs
+- Architecture Decision Records
+- Domain Names
+- SSL Certificate Renewal
+- Command Line Basics
+- Package Managers
+- Lockfiles
+- Dependency Pinning
+- License Compliance
+- SQL vs NoSQL
+- Primary Keys
+- Foreign Keys
+- UUIDs vs Auto-Increment IDs
+- Unique Constraints
+- Database Constraints
